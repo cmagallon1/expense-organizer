@@ -39,7 +39,7 @@ const renderFiles = () => {
         return `
             <li class="dbx-list-item ${type}">${file.name}</li>
         `
-    })
+    }).join('')
 }
 
 init();

@@ -36,6 +36,12 @@ const renderFiles = () => {
         }
     }).map(file => {
         const type = file['.tag']
+        let thumbnail
+        if(type === 'file'){
+            thumbnail = file.thumbnail ?  :
+        }else {
+
+        }
         return `
             <li class="dbx-list-item ${type}">${file.name}</li>
         `
